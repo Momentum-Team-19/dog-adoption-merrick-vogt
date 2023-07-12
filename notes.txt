@@ -1,0 +1,6 @@
+I am getting some help from chatGPT for the flex box container and items.
+I need to research what each of these CSS properties do:
+-display
+-flex-wrap
+-flex
+-box-sizing

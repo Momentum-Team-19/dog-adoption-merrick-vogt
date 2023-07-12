@@ -1,0 +1,57 @@
+/* 
+This is formatting the header at the top with a subtle border. The title is also
+shifted to the right to give spaccing on the border. rem is 32px as the root em = 
+16px. The font open sans is imported from https://fonts.googleapis.com.
+*/
+h1 {
+    color: white;
+    background-color: #004175;
+    font-size: 2rem;
+    padding: 20px 20px 20px 40px;
+    border: 2px solid #89DEEF;
+    font-family: "open sans";
+    margin-top: 0px;
+}
+
+/* the indentation is 42px to line up with 40px padding of h1 + 2px border. 
+The margin applies to both h2 and the p */
+h2, p {
+    margin: 0px 0px 20px 42px;
+    font-family: "open sans";
+}
+
+/* I need to understand both of these better */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 0px 30px 42px;
+}
+
+/* I need to figure out what these 3 mean */
+.grid-item {
+    flex: 0 0 33%;
+    border: 3px solid grey;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* This refers to img which is within the .grid item in the html file */
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+.horizontal-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+
+}
+
+.label {
+    background-color: #89DEEF;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 2px;
+}
+
