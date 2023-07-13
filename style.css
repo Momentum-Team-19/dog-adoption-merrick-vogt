@@ -12,8 +12,10 @@ body {
 This is the header for the site. The content is shifted down and right for spacing.
 The content is shifted 20px down and 42px right (40px padding). The green-ish border
 is only applied to the bottom of the header. The background is a nice blue color :) 
+ 
+This is probably not best practice to re-format h1. I think better practice 
+would be to create a header tag and select that.  
 */
-
 h1 {
     color: white;
     background-color: #004175;
@@ -86,30 +88,40 @@ when  */
     margin: 2px;
 }
 
-
-
 .foot-container {
     display: flex;
+    flex-wrap: nowrap;
 }
 
 .foot-item {
     flex: 1 1 auto;
+    height: 400px;
+    background-color: #A6A9F0;
     border: 3px solid grey;
-    /* align-items: center;
-    justify-content: center; */
 }
 
 .center-word {
     font-family: Oswald, sans-serif;
     font-size: 2rem;
-    /* text-align: center; */
-    /* padding: 20px; */
+    text-align: center;
+    line-height: 400px;
 }
 
-/* This selects the img's that are located within the .foot item in the html file */
+/* This selects the img's that are located within the .foot item in the html file 
+   I went back and forth on whether to use the tinted-image approach from css-tricks
+   or to create another class for the "overlay." I decided to use the tinted-image
+   with linear-gradient because it's a simpler solution without having to add any
+   html. Also, the overlay will not be needed to change in the future except for 
+   changing the color. 
+*/
 .foot-item img {
-    width: 100%;
-    height: auto;
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(180, 136, 243, 0.45), 
+      rgba(255, 0, 0, 0.45)
+    );
+    height: 400px;
 }
 
 
