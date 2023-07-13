@@ -1,6 +1,15 @@
-I am getting some help from chatGPT for the flex box container and items.
-I need to research what each of these CSS properties do:
--display
--flex-wrap
--flex
--box-sizing
+To-Do
+- footer
+    - center word on top of Picture
+    - correct spacing and size of Picture
+    - background color
+    - add blue-ish filter
+
+
+Spicy Extras
+- hover image without moving other flexbox
+- create link to online adoption form (separate html file?)
+- footer links to additional pages
+- JS record signups
+- Add signups into Mailchimp?
+

@@ -1,49 +1,80 @@
 /* 
 This is formatting the header at the top with a subtle border. The title is also
 shifted to the right to give spaccing on the border. rem is 32px as the root em = 
-16px. The font open sans is imported from https://fonts.googleapis.com.
+16px. The font Open Sans and Oswald are imported from https://fonts.googleapis.com.
 */
+
+/* Credit to overriding the default webpage margin goes to Kyle M. Thanks bud :) */
+body {
+    margin: 0px;
+}
+/* 
+This is the header for the site. The content is shifted down and right for spacing.
+The content is shifted 20px down and 42px right (40px padding). The green-ish border
+is only applied to the bottom of the header. The background is a nice blue color :) 
+*/
+
 h1 {
     color: white;
     background-color: #004175;
     font-size: 2rem;
     padding: 20px 20px 20px 40px;
-    border: 2px solid #89DEEF;
-    font-family: "open sans";
+    border-bottom: 2px solid #89DEEF;
+    font-family: "open sans", sans-serif;
     margin-top: 0px;
 }
 
-/* the indentation is 42px to line up with 40px padding of h1 + 2px border. 
-The margin applies to both h2 and the p */
+/* The h2 subheading and first informational paragraphs are shifted right 40px
+to match the h1 header.  */
+
 h2, p {
-    margin: 0px 0px 20px 42px;
-    font-family: "open sans";
+    margin: 0px 0px 20px 40px;
+    font-family: "open sans", sans-serif;
 }
 
-/* I need to understand both of these better */
-.grid-container {
+/* The h3 header is used for the names of each dog. The default padding are margin
+are over-ridden to reduce space between the picture, name, and labels. */
+
+h3 {
+    font-family: Oswald, sans-serif;
+    padding: 0px;
+    /* border: 2px solid red; */
+    margin: 0px;
+}
+
+/* I completed the flexbox froggy game! Now just to apply what I learned...
+
+In order to display the dog info in a order pleasing to the eye, I incorporated
+flexbox. flex-wrap: wrap allows the webpage to shift each dog profile down a line
+when  */
+.dog-container {
     display: flex;
     flex-wrap: wrap;
     margin: 0px 0px 30px 42px;
 }
 
-/* I need to figure out what these 3 mean */
-.grid-item {
-    flex: 0 0 33%;
-    border: 3px solid grey;
-    padding: 10px;
+.grid-dog {
+    width: 400px;
+    /* border: 3px solid grey; */
+    padding: 10px 10px 10px 0px;
     box-sizing: border-box;
 }
 
 /* This refers to img which is within the .grid item in the html file */
-.grid-item img {
+.grid-dog img {
     width: 100%;
     height: auto;
+}
+
+.grid-dog ul {
+    margin-top: 0;
 }
 
 .horizontal-list {
     display: flex;
     flex-wrap: wrap;
+    padding: 0px;
+    /* border: 2px solid red; */
     list-style-type: none;
 
 }
@@ -54,4 +85,32 @@ h2, p {
     border-radius: 20px;
     margin: 2px;
 }
+
+
+
+.foot-container {
+    display: flex;
+}
+
+.foot-item {
+    flex: 1 1 auto;
+    border: 3px solid grey;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.center-word {
+    font-family: Oswald, sans-serif;
+    font-size: 2rem;
+    /* text-align: center; */
+    /* padding: 20px; */
+}
+
+/* This selects the img's that are located within the .foot item in the html file */
+.foot-item img {
+    width: 100%;
+    height: auto;
+}
+
+
 
