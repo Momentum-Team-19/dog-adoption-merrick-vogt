@@ -101,8 +101,8 @@ when the browsing window decreases. */
     padding: 5px;
     border-radius: 20px;
     margin: 2px;
-    /* transition: background-color .75s ease;
-    transition: transform .5s ease; */
+    transition: background-color .75s ease;
+    transition: transform .5s ease;
 }
 
 /* Change individual box opacity on hover */
@@ -138,22 +138,36 @@ when the browsing window decreases. */
     background-size: cover;
     background-position: center;
 }
+
+.donate:hover {
+    opacity: .6;
+}
+
 .donate {
     background-image: linear-gradient(#A6A9F0AA,#A6A9F0AA), url('starter_files/images/donate.jpg');
+    transition: opacity 0.5s;
+}
+
+.volunteer:hover {
+    opacity: .6;
 }
 
 .volunteer {
     background-image: linear-gradient(#A6A9F0AA,#A6A9F0AA), url('starter_files/images/volunteer.jpg');
+    transition: opacity 0.5s;}
+
+.location:hover {
+    opacity: .6;
 }
 
 .location {
     background-image: linear-gradient(#A6A9F0AA,#A6A9F0AA), url('starter_files/images/location.png');
-}
+    transition: opacity 0.5s;}
 
-.foot-container img {
+/* .foot-container img {
     width: 100%;
     height: auto;
-} 
+}  */
 
 .center-word {
     font-family: Oswald, sans-serif;
