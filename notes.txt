@@ -1,11 +1,3 @@
-To-Do
-- footer
-    - center word on top of Picture
-    - correct spacing and size of Picture
-    - background color
-    - add blue-ish filter
-
-
 Spicy Extras
 - hover image without moving other flexbox
 - create link to online adoption form (separate html file?)
